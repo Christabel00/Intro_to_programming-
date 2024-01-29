@@ -1,0 +1,56 @@
+<html>
+<h1 id="myName">Eva</h1>
+<hr>
+<p id="aboutMe"><em>I'm learning to build dynamic web 
+pages with JavaScript and HTML!</em></p>
+<hr>
+<h2>Things I Like</h2>
+<p id ="Bella">Here are some of the things I like to do:</p>
+<ul>
+ <li id="firstThing">Write</li>
+ <li id="secondThing">Dance</li>
+ <li id="thirdThing">Travel</li>
+</ul>
+<p id="myParagraph">This is <em>my</em> paragraph.</p>
+
+
+<ol>
+    <li >Ruvimbo </li>
+    <li>Ikem</li>
+
+</ol>
+
+<img src ="coco.jpg" alt ="hey look at me">
+
+
+
+<script>
+    document.getElementById("myName").innerHTML = "cocomelon";
+</script>
+<button id ="changeList" type ="button">Click here</button>
+<script>
+    let item1;
+    let item2;
+    let item3;
+    document.getElementById("changeList").onclick = newList;
+function newList(){
+    item1 = prompt("Enter a new first thing")
+}
+
+
+function newList () {
+    item1 = prompt("Enter the first new thing :");
+    item2 = prompt( "Enter the second new thing :");
+    item3 = prompt("Enter the third new thing :");
+    updateList();
+}
+function updateList() {
+ document.getElementById("firstThing").innerHTML = 
+item1;
+ document.getElementById("secondThing").innerHTML = 
+item2;
+ document.getElementById("thirdThing").innerHTML = 
+item3;
+}
+</script>
+</html>
